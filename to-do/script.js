@@ -76,16 +76,17 @@ homeSec.addEventListener('click', (event) => {
         event.target.style.backgroundImage = "url('resources/checkMark.png')";
         event.target.previousSibling.lastElementChild.style.textDecoration = "line-through";
         event.target.disabled = 'true';
-        let idToRem = parseInt(event.target.previousSibling.firstElementChild.innerText[0]);
+        let idToRem = parseInt(event.target.previousSibling.firstElementChild.innerText.split(".")[0]);
         localStorage.removeItem(idToRem);
     }
 })
 
 window.addEventListener("load", () => {
-    if (!localStorage.getItem('localcounter')) {      //if no items present
+    if (!localStorage.getItem('localCounter')) {      //if no items present
         addSec.style.display = "block";
         homeSec.style.display = "none";
     } else {
+        if (localStorage.length===0) localStorage.setItem('localCounter', '0');
         loadLocalData();
     }
 })
