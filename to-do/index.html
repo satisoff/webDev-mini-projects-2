@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <link rel="shortcut icon" href="resources/to-do-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+            &hearts;
+            To-Do List
+            &hearts;
+        </h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-box">
+                <ol class="all-items">
+                    <!-- <li>
+                        <div class="item-text">
+                            <num>1. </num>
+                            <p>All Work Done</p>
+                        </div>
+                        <button id="item-check"></button>
+                    </li> -->   
+                </ol>
+                <div class="next-item">
+                    <button id="next-item">
+                        Add &plus;
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">
+            &copy; <a href="https://github.com/satisoff" target="_blank">satisoff</a>
+        </p>
+    </footer>
+
+    <section class="search-section">
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search">
+        </div>
+    </section>
+
+    <section class="add-section">
+        <div class="add-task-box">
+            <input type="text" class="add-input">
+            <button id="insert-task">Add</button>
+        </div>
+    </section>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
