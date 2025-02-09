@@ -7,6 +7,7 @@ A collection of small web development projects showcasing various HTML, CSS, and
 This repository contains multiple mini projects that demonstrates different web development concepts and techniques:
 
 1. **To-Do List**
+
     - Interactive task management application
     - Add and remove tasks functionality
     - Search feature to filter tasks
@@ -15,6 +16,14 @@ This repository contains multiple mini projects that demonstrates different web 
     - Custom checkmark animation for completed tasks
     - Modern glass-morphism inspired UI design
     - https://to-do-list-psi-nine-99.vercel.app/
+
+2. **Recipe Finder**
+    - Recipe search application using TheMealDB API
+    - Displays detailed recipe information including ingredients and instructions
+    - Interactive ingredient images with hover effects
+    - Links to video tutorials and blog posts
+    - Responsive design for laptop screens
+    - Modern UI with elegant typography
 
 ## Project Structure
 

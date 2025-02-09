@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="resources/cookieIcon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/fresh-food" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Let's Cook Something</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="top-row">
+                <div class="search-box">
+                    <h2>How to make...</h2>
+                    <div style="position: relative;">
+                        <input type="text" placeholder="Pizza" id="search-box-food">
+                        <img src="https://img.icons8.com/d8a9f7/48/search.png" alt="search" id="search-icon"/>
+                    </div>                    
+                </div>
+                <button id="search-btn">Let's See</button>
+            </div>
+
+            <div class="bottom-row">
+                <div class="nothing-found">
+                    <!-- <img src="resources/cookieIcon.png" alt="Nothing Found" class="animated-gif"> -->
+                    <img src="https://img.icons8.com/3d-fluency/750/cookie.png" alt="cookie"/ class="animated-gif">
+                    <p>Nothing to show</p>
+                </div>
+
+                <div class="result-box">
+                    <div class="title-img-box">
+                        <div class="item-title-box">
+                            <h2>Sushi</h2>
+                            <div class="misc-title-box">
+                                <p>Japanese - Seafood</p>
+                            </div>
+                        </div>
+                        <div class="item-img-box">
+                            <img src="https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg" alt="Food Image">
+                        </div>
+                    </div>
+
+                    <div class="ingredient-box marginBox">
+                        <div class="ing-title-box">
+                            <h3>Ingredients</h3>
+                            <div class="ing-box-list">
+                                <div class="ing-1 ing-box">
+                                    <p 
+                                    class="ing-name">Sushi Rice</p>
+                                    <p class="ing-measure">300ml</p>
+                                </div>
+                                <div class="ing-2 ing-box">
+                                    <p class="ing-name">Rice Wine</p>
+                                    <p class="ing-measure">100ml</p>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="ing-img-box">
+                            <img src="https://www.themealdb.com/images/ingredients/Sushi%20Rice.png" alt="Ingredient image">
+                        </div>
+                    </div>
+
+                    <div class="instruction-box marginBox">
+                        <div class="instruction-title-box">
+                            <h3>Instructions</h3>
+                            <div class="instruction-steps">
+                                <li>Step1. sdjkf</li>
+                                <li>Step2. slkdfjd</li>
+                                <li>Step1. sdjkf</li>
+                                <li>Step2. slkdfjd</li>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="others-box marginBox">
+                        <div class="vid-link-box">
+                            See the video tutorial 
+                            <a href="www.google.com" target="_blank">here</a>
+                        </div>
+                        <div class="blog-link-box">
+                            Check out <a href="www.google.com" target="_blank">blog</a> page
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </main>
+
+    <div class="for-other-device">
+        <h2>Site only supported for higher screen resolutions</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

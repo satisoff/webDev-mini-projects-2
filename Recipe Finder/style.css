@@ -1,0 +1,299 @@
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    /* Only for laptop-responsivenss */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #282828;
+        display: flex;
+    }
+    
+    header {
+        color: #b394c8;
+        width: 23rem;
+        height: 100vh;
+        font-family: "Great Vibes", serif;
+        line-height: 7rem;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        font-size: 2.5rem;
+        flex-wrap: wrap;
+    }
+    
+    main {
+        max-width: 100%;
+        height: 100vh;
+    }
+    
+    .container {
+        width: 100%;
+        height: 100%;
+        padding: 1rem 3rem;
+    }
+    
+    .top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 2rem 0.5rem;
+        flex-wrap: wrap;
+        height: 5rem;
+        width: 55rem;
+    }
+    
+    .search-box {
+        color: #d0bbdd;
+        font-family: "Comfortaa", serif;
+    }
+    .search-box h2 {
+        font-size: 1rem;
+        margin-left: 0.2rem;
+    }
+    .search-box input {
+        width: 40rem;
+        height: 2.5rem;
+        font-size: 1.1rem;
+        font-family: "Fresh Food", sans-serif;
+        letter-spacing: 0.1rem;
+        padding: 0.3rem 1rem;
+        outline: none;
+        border-radius: 10px;
+        border: none;
+        background-color: #ffffff48;
+        color: #fff;
+    }
+    #search-icon {
+        position: absolute;
+        right: 2%;
+        height: 1.3rem;
+        bottom: 25%;
+    }
+    
+    #search-btn {
+        font-size: 1.2rem;
+        height: 2.5rem;
+        padding: 0rem 1.5rem;
+        line-height: 2.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #b394c8;
+        color: #121212;
+        font-family: "Sour Gummy", serif;
+    }
+    
+    .bottom-row {
+        height: 33rem;
+        width: 55rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nothing-found {
+        max-height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        flex-wrap: wrap;
+        /* display: none; */
+    }
+    .animated-gif {
+        height: 15rem;
+        width: 15rem;
+    }
+    .nothing-found p {
+        font-size: 2rem;
+        color: #c87e0d;
+        font-family: "Comfortaa";
+    }
+    
+    .result-box {
+        height: 100%;
+        width: 100%;
+        margin-top: 2rem;
+        padding: 1rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        color: #fff;
+        overflow-x: hidden;
+        display: none;
+    }
+    
+    .marginBox {
+        margin-top: 4rem;
+    }
+    
+    .title-img-box {
+        width: 100%;
+        height: 13rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    .item-title-box  {
+        width: 50%;
+        height: 8rem;
+        font-size: 3.5rem;
+        padding: 1rem 2rem;
+    }
+    .misc-title-box {
+        font-size: 1.2rem;
+    }
+    
+    .item-img-box {
+        width: 13rem;
+        height: 13rem;
+        object-fit: contain;
+    }
+    .item-img-box img {
+        max-height: 100%;
+        cursor: pointer;
+    }
+    
+    .ingredient-box {
+        width: 100%;
+        height: 20rem;              /*4x5*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .ing-title-box {
+        width: 70%;
+        border: 1px solid #b394c8;
+        height: 4rem;
+        border-radius: 10px;
+        line-height: 4rem;
+        padding: 0 3rem;
+        font-size: 2rem;
+        background-color: #ffffff27;
+        color: #aa87c1;
+        cursor: pointer;
+        position: relative;
+    }
+    .ing-box-list {
+        color: #ffffff44;
+    }
+    .ing-name:hover {
+        text-decoration: underline;
+    }
+    
+    .ing-box{
+        display: flex;
+        width: 100%;
+        height: 4rem;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    
+    .ing-img-box {
+        width: 15rem;
+        height: 15rem;
+        display: flex;
+        justify-content: flex-end;
+        position: sticky;
+        top: 1rem;
+        margin-top: 3.5rem;
+    }
+    .ing-img-box img{
+        max-height: 100%;
+    }
+    
+    .loader {
+        width: 15px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        animation: l5 1s infinite linear alternate;
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+    @keyframes l5 {
+        0%  {box-shadow: 20px 0 #000, -20px 0 #0002;background: #000 }
+        33% {box-shadow: 20px 0 #000, -20px 0 #0002;background: #0002}
+        66% {box-shadow: 20px 0 #0002,-20px 0 #000; background: #0002}
+        100%{box-shadow: 20px 0 #0002,-20px 0 #000; background: #000 }
+    }
+    
+    .instruction-box {
+        width: 100%;
+        height: 30rem;          /*5x4*/
+        overflow: scroll;
+        overflow-x: hidden;
+        padding: 0 1rem;
+    }
+    .instruction-steps li{
+        list-style-type: none;
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin: 1.5rem 0;
+    }
+    
+    .instruction-title-box {
+        width: 100%;
+        border: 1px solid #b394c8;
+        height: 4rem;
+        border-radius: 10px;
+        line-height: 4rem;
+        padding: 0 3rem;
+        font-size: 2rem;
+        background-color: #ffffff27;
+        color: #aa87c1;
+    }
+    .instruction-steps {
+        color: #ffffff44;
+    }
+    
+    .others-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 4rem;
+        margin-bottom: 0.5rem;
+        line-height: 4rem;
+        font-size: 1.8rem;    
+        padding: 0 2rem;
+    }
+    .others-box div {
+        background-color: #ffffff27;
+        color: #ffffff44;
+        cursor: pointer;
+        padding: 0 3.4rem;
+        border-radius: 10px;
+    }
+
+    .for-other-device {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    header, main {
+        display: none;
+    }
+
+    body {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        background-color: #b394c8;
+    }
+
+    .for-other-device {
+        display: block;
+        height: 20rem;
+        width: 20rem;
+        font-size: 2rem;
+        color: #282828;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
