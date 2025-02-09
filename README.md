@@ -24,6 +24,7 @@ This repository contains multiple mini projects that demonstrates different web 
     - Links to video tutorials and blog posts
     - Responsive design for laptop screens
     - Modern UI with elegant typography
+    - https://recipe-finder-kappa-lemon.vercel.app/
 
 ## Project Structure
 
