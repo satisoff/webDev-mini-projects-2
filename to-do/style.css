@@ -207,8 +207,8 @@
     .main-box {
         border-radius: 20px;
         margin-top: 3rem;
-        width: 20rem;
-        height: 30rem;
+        width: 23rem;
+        height: 35rem;
         border: 1px solid #8b8b8b;
         padding: 1.5rem 1.5rem;
         overflow-x: hidden;
@@ -277,7 +277,7 @@
     section[class*="search"] {
         position: absolute;
         top: 6.5rem;
-        left: 2rem;
+        left: 15%;
     }
     .search-input {
         height: 3rem;
@@ -294,7 +294,7 @@
     section[class*="add"] {
         position: absolute;
         top: 40%;
-        left: 5%;
+        left: 12%;
         display: none;
     }
     .add-task-box {
