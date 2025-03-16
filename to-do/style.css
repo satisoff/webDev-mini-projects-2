@@ -187,10 +187,10 @@
     }
     
     header {
-        height: 8rem;
+        height: 10rem;
         text-align: center;
-        line-height: 8rem;
-        font-size: 1.25rem;
+        line-height: 10rem;
+        font-size: 1.75rem;
         font-family: "Princess Sofia", serif;
     }
     
@@ -207,8 +207,8 @@
     .main-box {
         border-radius: 20px;
         margin-top: 3rem;
-        width: 23rem;
-        height: 35rem;
+        width: 90%;
+        height: auto;
         border: 1px solid #8b8b8b;
         padding: 1.5rem 1.5rem;
         overflow-x: hidden;
@@ -258,13 +258,14 @@
     }
     
     .next-item {
-        margin: 1rem 5rem;
+        margin: 1rem 0;
         border: 1px solid white;
         border-radius: 40px;
         text-align: center;
         width: 7rem;
+        justify-self: center;
     }
-    .next-item button {
+    #next-item {
         font-size: 1.6rem;
         padding: 0.5rem 1rem;
         text-align: center;
@@ -276,7 +277,7 @@
     
     section[class*="search"] {
         position: absolute;
-        top: 6.5rem;
+        top: 8.5rem;
         left: 15%;
     }
     .search-input {
