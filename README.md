@@ -18,6 +18,7 @@ This repository contains multiple mini projects that demonstrates different web 
     - https://to-do-list-psi-nine-99.vercel.app/
 
 2. **Recipe Finder**
+
     - Recipe search application using TheMealDB API
     - Displays detailed recipe information including ingredients and instructions
     - Interactive ingredient images with hover effects
@@ -25,6 +26,14 @@ This repository contains multiple mini projects that demonstrates different web 
     - Responsive design for laptop screens
     - Modern UI with elegant typography
     - https://recipe-finder-kappa-lemon.vercel.app/
+
+3. **Music Player**
+    - Modern web-based music player with custom UI
+    - Add and play local audio files (MP3, WAV)
+    - Play, pause, next, previous, shuffle, and loop controls
+    - Volume and seek bar with mute/unmute functionality
+    - Like/dislike buttons for current track
+    - Animated UI elements and smooth transitions
 
 ## Project Structure
 
