@@ -1,0 +1,258 @@
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+    /* For Laptop */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 100vmin;
+        width: 100vmin;
+        /* background-image: linear-gradient(30deg, rgb(20, 20, 20), rgb(93, 93, 93)); */
+        /* background-image: linear-gradient(90deg, #BC7C9C, #A96DA3, #A96DA3, #A96DA3, #BC7C9C); */
+        background-image: linear-gradient(30deg, #7A5980, #3B3B58, #7A5980);
+        /* animation: changeBack infinite ease-in-out alternate forwards; */
+    }
+
+    @keyframes changeBack {
+        0% {
+            background-image: linear-gradient(45deg, #BC7C9C, #A96DA3, #A96DA3, #A96DA3, #BC7C9C);
+        } 
+        25% {
+            background-image: linear-gradient(75deg, #BC7C9C, #A96DA3, #A96DA3, #A96DA3, #BC7C9C);            
+        }
+        50% {
+            background-image: linear-gradient(105deg, #BC7C9C, #A96DA3, #A96DA3, #A96DA3, #BC7C9C);
+        }
+        75% {
+            background-image: linear-gradient(75deg, #BC7C9C, #A96DA3, #A96DA3, #A96DA3, #BC7C9C);
+        }
+        100% {
+            background-image: linear-gradient(45deg, #BC7C9C, #A96DA3, #A96DA3, #A96DA3, #BC7C9C);
+        }
+    }
+
+    main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .add-song {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+    #addSongBtn {
+        background-image: url("_resources/icons8-add-song-100.png");
+        height: 3rem;
+        width: 3rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+    }
+
+    .container {
+        width: 50%;
+        height: 52%;
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        border-radius: 30px;
+        backdrop-filter: blur(20px);
+        border: 1px solid #A96DA3;
+        box-shadow: 0px 1px 18px #A96DA3, 0px -1px 18px #A96DA3;
+        /* background-image: linear-gradient(30deg, rgb(120, 120, 120), rgb(61, 60, 60)); */
+        /* background-image: linear-gradient(30deg, #7A5980, #3B3B58, #7A5980); */
+        background-color: rgba(0, 0, 0, 0.081);
+        /* animation: moveTopShadow 0.7s ease-in-out infinite alternate; */
+    }
+    @keyframes moveTopShadow {
+        0% {
+            box-shadow: 0px 1px 18px #A96DA3, 0px -1px 18px #A96DA3;
+        }
+        25% {
+            box-shadow: 0px 1px 18px #A96DA3, 0px -8px 18px #A96DA3;
+        }
+        50% {
+            box-shadow: 0px 1px 18px #A96DA3, 0px -16px 18px #A96DA3;
+        }
+        75% {
+            box-shadow: 0px 1px 18px #A96DA3, 0px -8px 18px #A96DA3;
+        }
+        100% {
+            box-shadow: 0px 1px 18px #A96DA3, 0px -1px 18px #A96DA3;
+        }
+    }
+
+    .container input[type="range"], button {
+        cursor: pointer;
+    }
+
+    .main-strip {
+        display: grid;
+        grid-template-rows: 1fr 4fr 1fr;
+    }
+
+    .ctrl-bar {
+        display: grid;
+        grid-template-rows: 3fr 1fr;
+    }
+
+    .ppn-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .ppn-bar button {
+        height: 50%;
+        width: 15%;
+    }
+    #prev {
+        background-image: url("_resources/icons8-previous-100.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+    }
+    #play {
+        background-image: url("_resources/icons8-play-100.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        width: 22%;
+    }
+    #next {
+        background-image: url("_resources/icons8-next-100\(1\).png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+    }
+
+    .like-bar {
+        display: flex;
+        align-items: flex-  ;
+        justify-content: center;
+    }
+    .like-bar button {
+        height: 70%;
+        width: 8%;
+        margin: 0 0.8rem;
+    }
+    #like, #dislike, #vol-btn,
+    #shuffle, #loop, #shuffle {
+        background-image: url("_resources/icons8-heart-100.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: none;
+        background-color: transparent;
+    }
+    #dislike {
+        background-image: url("_resources/icons8-dislike-100.png");
+    }
+
+    .vol-strip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.5rem;
+    }
+    #vol-div {
+        height: 50%;
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #vol-bar {
+        transform: rotate(-90deg);
+        justify-self: center;
+    }
+    #vol-btn {
+        justify-self: center;
+        align-self: flex-end;
+        height: 2rem;
+        width: 2rem;
+        background-image: url("_resources/icons8-volume-100.png");
+    }
+
+    .cur-song {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: "Comic Neue", cursive;
+        font-weight: 300;
+        font-style: italic; 
+        color: rgb(111, 239, 211);
+    }
+    .cur-song h3 {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .time-bar {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+    .seek-time {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 0.9rem;
+        font-weight: 100;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .seek-bar {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #seekBar {
+        width: 90%;
+    }
+
+    .btn-strip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .misc-btn-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 30%;
+        height: 50%;
+    }
+    .misc-btn-div button {
+        height: 2rem;
+        width: 2rem;
+    }
+    #shuffle {
+        background-image: url("_resources/icons8-shuffle-96.png");
+    }
+    #loop {
+        background-image: url("_resources/icons8-loop-90.png");
+    }
+
+    .pressSmoo {
+        transform: scale(0.8);
+    }
+    .popOut {
+        transform: scale(1.1);
+    }
+    .container button, #addSongBtn {
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* For Mobile Devices */
+}

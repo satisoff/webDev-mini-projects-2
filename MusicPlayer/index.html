@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link rel="shortcut icon" href="_resources/icons8-song-48.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Delius&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="add-song">
+            <button id="addSongBtn" title="Add Songs"></button>
+            <input type="file" name="" id="newSongs" style="display: none;" multiple accept=".mp3,.wav">
+        </div>
+        <div class="container">
+
+            <!-- Hidden Audio Tag -->
+             <audio src="#" id="songPlayer"></audio>
+
+            <div class="vol-strip">
+                <div id="vol-div">
+                    <input type="range" name="volBar" id="vol-bar">
+                    <button id="vol-btn"></button>
+                </div>
+            </div>
+
+            <div class="main-strip">
+
+                <div class="cur-song">
+                    <h3>Nothing to Play</h3>
+                </div>
+
+                <div class="ctrl-bar">
+
+                    <div class="ppn-bar">
+                        <button id="prev"></button>
+                        <button id="play"></button>
+                        <button id="next"></button>
+                    </div>
+                    <div class="time-bar">
+                        <div class="start-time seek-time">
+                            <p>00:00</p>
+                        </div>
+                        <div class="seek-bar">
+                            <input type="range" name="seek-bar" id="seekBar">
+                        </div>
+                        <div class="end-time seek-time">
+                            <p>00:00</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="like-bar">
+                    <button id="like"></button>
+                    <button id="dislike"></button>
+                </div>
+
+            </div>
+
+            <div class="btn-strip">
+                <div class="misc-btn-div">
+                    <button id="shuffle"></button>
+                    <button id="loop"></button>
+                    <button id="shuffle"></button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
