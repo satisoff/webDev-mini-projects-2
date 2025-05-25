@@ -34,6 +34,7 @@ This repository contains multiple mini projects that demonstrates different web 
     - Volume and seek bar with mute/unmute functionality
     - Like/dislike buttons for current track
     - Animated UI elements and smooth transitions
+    - https://music-player-blond-pi.vercel.app/
 
 ## Project Structure
 
