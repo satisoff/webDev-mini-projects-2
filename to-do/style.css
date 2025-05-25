@@ -168,7 +168,9 @@
         bottom: 0;
         left: 47vw;
     }
-    .copyright > a{
+    .copyright > a:visited,
+    .copyright > a {
+        color: #5e96e9;
         text-decoration: none;
     }
 }
@@ -202,6 +204,7 @@
         height: 100%;
         display: flex;
         justify-content: center;
+        position: relative;
     }
     
     .main-box {
@@ -345,9 +348,12 @@
         background-color: inherit;
         position: absolute;
         bottom: 0;
-        left: 40vw;
+        width: 100%;
+        cursor: pointer;
     }
-    .copyright > a{
+    .copyright > a:visited,
+    .copyright > a {
+        color: #5e96e9;
         text-decoration: none;
     }
 }

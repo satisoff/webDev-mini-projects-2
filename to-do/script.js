@@ -5,6 +5,7 @@ const addSecAddBtn = document.getElementById("insert-task");
 const addInput = document.querySelector(".add-input");
 const searchInput = document.querySelector(".search-input");
 const allCheckBox = document.querySelectorAll("#item-check");
+const copyRight = document.querySelector(".copyright");
 
 function addItem(curItemNum, newTaskContent) {
     addInput.value = "";            //clear old value
@@ -114,3 +115,8 @@ function searchTask() {
 }
 
 searchInput.addEventListener("input", searchTask);
+
+// Remove default link formatting for copyright button
+copyRight.addEventListener("click", () => {
+    this.preventDefault();
+});
