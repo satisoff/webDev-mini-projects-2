@@ -14,8 +14,13 @@ function addItem(curItemNum, newTaskContent) {
     newItemDiv.classList.add("item-text", `item-${curItemNum}`);
     const newItemNum = document.createElement("num");
     newItemNum.innerText = `${curItemNum}. `;
-    const newItemPara = document.createElement("p");
+    const newItemPara = document.createElement("p");    
     newItemPara.innerText = `${newTaskContent}`;
+    // Make item to redirect to its content
+    newItemPara.addEventListener("click", () => {
+        let query = encodeURIComponent(newTaskContent);
+        window.open(`https://www.google.com/search?q=${query}`);
+    })
     const newItemBtn = document.createElement("button");
     newItemBtn.setAttribute('id', 'item-check');
     newItemDiv.appendChild(newItemNum);
