@@ -64,6 +64,7 @@
         color: #fff;
         transition: transform 0.2s ease-in-out;
         font-family: "Original Surfer", serif;
+        cursor: pointer;
         /* text-overflow: ellipsis; */
         /* overflow: visible; */
         /* white-space: inherit; */
